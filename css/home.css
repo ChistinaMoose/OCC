@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EAE3C9;
+    /*color: white;
+    line-height: 1.6;
+    height: 100vh; */
+    /* overflow: hidden; */
+    overflow:auto;
+    margin:0;
+}
+
+.home {
+    background-color: aliceblue;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #654321;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #949D6A;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.title{
+    width: 85%;
+    margin: auto;
+    color:#104730;
+    font-size: 3.5em;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 0;  
+    animation: fadeInTitle 4s;
+}
+
+@keyframes fadeInTitle {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.collapsible {
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    width: 30%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+}
+  
+
+  
+.content {
+    margin-top: 15px;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    color: #654321;
+}
+
+button {
+    padding:11px;
+    font-size: 18px;
+    background: #6D9775;
+    color:#fff;
+    border-radius: 24px;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover {
+    background: #417154;
+}
+
+button:active {
+    background: #417154;
+}
+
+
+.screaming {
+    width: 85%;
+    margin: auto;
+    animation: fadeInScream 7s;
+}
+
+@keyframes fadeInScream {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}

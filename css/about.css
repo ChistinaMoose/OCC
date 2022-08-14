@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EAE3C9;
+    color: white;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #654321;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #949D6A;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.ab p {
+    font-size: 20px;
+    color: #654321;
+    font-family: 'Roboto', sans-serif;
+}
+
+.me {
+    width: 275px;
+    height: 275px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 50%; 
+    animation: fadeInBleh 3s;
+}
+
+.christina {
+    text-align: center;
+    animation: fadeInBleh 3s;
+}
+
+@keyframes fadeInBleh {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+

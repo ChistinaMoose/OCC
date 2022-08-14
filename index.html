@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Capsule Closet</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stats.html">Stats</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="title">
+        <h1>our capsule closet</h1>
+    </div>  
+
+<!-- <div class="home"> -->
+    <div class="screaming">
+        <button type="button" class="collapsible">What We Do</button>
+    <!-- <div class="grammarProcessing">
+        <h4 class="descriptor grammarHead accordionTrigger closed">What We Do</h4> -->
+        <div class="content">
+            <p>"Our capsule closet" is a website that aims to help inform and spread awareness on the social impacts of fast fashion.</p>
+        </div>
+        <br>
+        <br>
+
+        <!-- <div class="accordion">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div> -->
+    <!-- </div> -->
+        <button type="button" class="collapsible">Why Fast Fashion is a Social Issue</button>
+        <div class="content">
+            <p>With the only objective to sell as much and as fast as possible, fast fashion has become innately intertwined with the exploitation of people and the environment.<br><br>
+                Fast fashion amounts to 10% of global carbon emissions and is the second most polluting industry after oil. Every year, the global fast fashion industry produces over 53 million tons of fiber, 70% of which wind up in dumps or is incinerated- contributing greately to global warming. According to the UN Environment Programme, the fast fashion industry is the world's second-highest consumer of water, requiring 700 gallons to produce a single cotton shirt and 2,000 gallons to produce a single pair of jeans. Textile-dyeing, on the other hand, is the world's second-highest polluter of water, as much of the liquid leftover from dyeing processes is dumped in ditches, streams, and rivers. Washing clothes also releases 500,000 tons of microfibres (equal to nearly 500,000 billion plastic bottles) every year. As the environment deteriorates via the impacts of fast fashion, millions of those in poverty face greater challenges in maintaining their health, food, water, shelther, and overall livelihood security. <br><br>
+                The majority of fast fashion production is established in overseas countries with poor labor laws and little to no human rights protections. Workers are extremely underpaid and must toil for hours on end in terrible conditions of harrassment, violence, and discrimination. Woman workers are often sexually abused, forced to abort their pregnancies, or send their youth into labor, depriving them of their childhood, education, and mental/physical development. Additionally, many fast fashion factories have been responsible for the death of thousands of people in disastrous events (e.g. Dhaka garment factory collapse). <br><br>
+                Unfortunately, fast fashion is a never-ending cycle. It promotes throwaway culture and excessive consumerism, so that clothes are easily replacable as they are disposable. Instead of purchasing through decision and sustainability in the long-term, we become encouraged to buy on emotion. This is a subconscious that retailers use to their advantage- pushing for lower production costs to increase profit and meet customer demand while supporting unlivable wages for its workers. <br><br>
+                It's time we start to change that.<br><br><br>
+            </p>
+        </div>
+    </div>
+
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+    </script>
+</body>
+</html>
